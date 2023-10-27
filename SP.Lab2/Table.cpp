@@ -33,6 +33,20 @@ void Table::SetData(const std::wstring& data)
         _data[i] = data;
 }
 
+void Table::SetData(const std::vector<std::vector<std::wstring>>& data)
+{
+    for (int row = 0; row < _rows; ++row)
+        for (int column = 0; column < _columns; ++column)
+            _data[row * _columns + column] = data[row][column];
+}
+
+void Table::SetData(std::vector<std::vector<std::wstring>>&& data)
+{
+    for (int row = 0; row < _rows; ++row)
+        for (int column = 0; column < _columns; ++column)
+            _data[row * _columns + column] = std::move(data[row][column]);
+}
+
 int Table::GetRows() const
 { return _rows; }
 

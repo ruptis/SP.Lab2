@@ -14,6 +14,8 @@ public:
     void SetData(const std::vector<std::wstring>& data);
     void SetData(std::vector<std::wstring>&& data);
     void SetData(const std::wstring& data);
+    void SetData(const std::vector<std::vector<std::wstring>>& data);
+    void SetData(std::vector<std::vector<std::wstring>>&& data);
 
     [[nodiscard]] std::wstring GetCell(int row, int column) const;
 

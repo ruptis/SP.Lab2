@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CellView.cpp" />
+    <ClCompile Include="CsvReader.cpp" />
     <ClCompile Include="Table.cpp" />
     <ClCompile Include="TableApplication.cpp" />
     <ClCompile Include="TableView.cpp" />
@@ -37,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CellView.h" />
+    <ClInclude Include="CsvReader.h" />
     <ClInclude Include="DWrite.h" />
     <ClInclude Include="Table.h" />
     <ClInclude Include="TableApplication.h" />
